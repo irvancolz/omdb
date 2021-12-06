@@ -10,7 +10,7 @@ const loader = document.querySelector('.loader');
 
 //membuat rekomendasi film pilihan
 searchKeyword.addEventListener('keyup',()=>{ 
-        fetch('http://www.omdbapi.com/?apikey=8c3a26e3&&s='+ searchKeyword.value)
+        fetch('https://www.omdbapi.com/?apikey=8c3a26e3&&s='+ searchKeyword.value)
         .then(response => response.json())
         .then(response =>{
             const movie = response.Search;
@@ -52,7 +52,7 @@ function fetchMovie(){
     loader.style.display = 'block';
     sugestionContainer.innerHTML = null;
     filmContainer.innerHTML = null;  
-    fetch('http://www.omdbapi.com/?apikey=8c3a26e3&&s=' + searchKeyword.value)
+    fetch('https://www.omdbapi.com/?apikey=8c3a26e3&&s=' + searchKeyword.value)
     .then(response => response.json())
     .then(response => {
         errorMessage.style.display = 'none';

@@ -92,7 +92,7 @@ function fetchMovie(){
         if(searchKeyword.value.length == 0) ()=>{
             startMessage.style.display ='block';
             loader.style.display = 'none';
-            errorMessage.style.display = 'none';
+            errorMessage.style.display = 'block';
         }
         mainSectionH2.style.display = 'none';
     })

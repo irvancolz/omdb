@@ -123,7 +123,7 @@ const detailContainer = document.querySelector('.movie-detail-container');
 function makeMovieDetail(imdbId){
     loader.style.display = 'block';
     detailContainer.innerHTML = null;
-    fetch('http://www.omdbapi.com/?apikey=8c3a26e3&&i=' + imdbId)
+    fetch('https://www.omdbapi.com/?apikey=8c3a26e3&&i=' + imdbId)
     .then(response => response.json())
     .then(response =>{
         errorMessage.style.display = 'none';
